@@ -18,6 +18,9 @@ const category = async (id) => {
     let categoriesData = data.data;
     console.log(categoriesData);
 
+    
+
+
     const tubeContainer = document.getElementById('ph-tube-container');
     tubeContainer.textContent = '';
 
@@ -29,7 +32,13 @@ const category = async (id) => {
         err.classList.add('hidden');
     }
 
+    
 
+    categoriesData.sort((a, b) => {
+        const viewsA = parseFloat(a.others.views.replace('K', '')) || 0;
+        const viewsB = parseFloat(b.others.views.replace('K', '')) || 0;
+        return viewsB - viewsA;
+    })
 
 
     categoriesData.forEach(categoryData => {
@@ -55,6 +64,7 @@ const category = async (id) => {
     })
 
 }
+
 
 loadPhTube();
 category('1000');
