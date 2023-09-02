@@ -34,7 +34,7 @@ const displayData = (categoriesData) => {
         const tubeContainerCard = document.createElement('div');
         tubeContainerCard.innerHTML = `
         <div class="card h-80 bg-base-100 shadow-xl">
-                <figure class="h-52 relative"><img src="${categoryData.thumbnail}" alt="ph-tube"/> <span class="absolute right-2 bottom-2 text-white bg-gray-800 rounded-lg px-2">${categoryData.others.posted_date ? `${parseInt((categoryData.others.posted_date) / 3600)}hrs ${Math.floor(((categoryData.others?.posted_date) % 3600) / 60)} min ago` : ''}</span></figure>
+                <figure class="h-64 relative"><img src="${categoryData.thumbnail}" alt="ph-tube"/> <span class="absolute right-2 bottom-4 text-white bg-gray-800 rounded-lg px-2">${categoryData.others.posted_date ? `${parseInt((categoryData.others.posted_date) / 3600)}hrs ${Math.floor(((categoryData.others?.posted_date) % 3600) / 60)} min ago` : ''}</span></figure>
                 <div class="card-body">
                   <div class="flex justify-start gap-5">
                     <div>
