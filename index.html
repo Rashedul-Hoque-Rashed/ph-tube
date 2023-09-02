@@ -28,12 +28,12 @@
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <button tabindex="0" class="btn menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-lg font-medium normal-case">Sort By View</button>
+                <button id="sortBtn2" tabindex="0" class="btn menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-lg font-medium normal-case focus:bg-[#FF1F3D] focus:text-white">Sort By View</button>
               </div>
               <img class="w-32" src="images/Logo.png" alt="">
             </div>
             <div class="navbar-center hidden lg:flex">
-              <button class="btn menu menu-horizontal px-4 text-lg font-medium normal-case">Sort By View</button>
+              <button id="sortBtn" class="btn menu menu-horizontal px-4 text-lg font-medium normal-case focus:bg-[#FF1F3D] focus:text-white">Sort By View</button>
             </div>
             <div class="navbar-end">
               <a onclick="blog()" class="btn text-white bg-[#FF1F3D] hover:bg-red-400 text-lg font-medium normal-case">Blog</a>
@@ -44,15 +44,13 @@
     <main class="container mx-auto md:px-10">
         <div id="category-btn" class="grid grid-cols-2 md:grid-cols-4 gap-10 my-8 md:max-w-xl mx-auto">
 
-
         </div>
         <div id="no-data" class="mt-28 hidden">
           <img src="images/Icon.png" alt="" class="mx-auto mb-4">
           <p class="text-3xl font-bold text-center">Oops!! Sorry, There is no <br> content here</p>
         </div>
-        <div id="ph-tube-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+        <div id="ph-tube-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             
-
         </div>
     </main>
     <script src="js/index.js"></script>
